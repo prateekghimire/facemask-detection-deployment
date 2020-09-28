@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 import numpy as np
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-model=keras.models.load_model('trained.model')
+model=keras.models.load_model('model.h5')
 
 st.write("""
         # FACE MASK PREDICTION
