@@ -1,12 +1,11 @@
-import keras
+import tensorflow as tf
 import streamlit as st
 import cv2
-import keras
 from PIL import Image, ImageOps
 import numpy as np
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-model=keras.models.load_model('model.h5')
+model=tf.keras.models.load_model('model.h5')
 
 st.write("""
         # FACE MASK PREDICTION
